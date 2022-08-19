@@ -53,10 +53,10 @@
                         //Enquanto tiver linha com resultado
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo  '<tr>';
-                            echo '<td>'.$row["id"].'</td>';
-                            echo '<td>'.$row["nome"].'</td>';
-                            echo '<td>'.$row["email"].'</td>';
-                        echo '</tr>';
+                            echo '<td>' . $row["id"] . '</td>';
+                            echo '<td>' . $row["nome"] . '</td>';
+                            echo '<td>' . $row["email"] . '</td>';
+                            echo '</tr>';
                         }
                     } else {
                         echo mysqli_error($conexao);
@@ -71,6 +71,8 @@
 
             </tbody>
         </table>
+
+        <a href="index.html" class="btn btn-info">Inserir Dados</a>
 
     </div>
 
